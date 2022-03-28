@@ -104,6 +104,13 @@ public class Main {
         System.out.println("KM per hours: " + km_per_hour);
         System.out.println("Miles per hours: " + miles_per_hour);
 
+        if (meters > 2000) {
+            System.out.println("Meters covered is greater than 2000");
+
+        } else {
+            System.out.println("Meters covered is less than 2000");
+        }
+
     }
 
 }
