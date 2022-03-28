@@ -10,8 +10,7 @@ public class Main {
         Task2();
         Task3();
         Task4();
-
-
+        task5();
 
     }
     static void Task1(){
@@ -74,6 +73,37 @@ public class Main {
      // Conditional Operator
         System.out.println(20 > 5 && 15 >= 15);
         System.out.println(20 < 5 || 15 > 16);
+    }
+
+    static void task5() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please input the distance in meters: ");
+        double meters = scanner.nextDouble();
+
+        System.out.println("Please input how many hours taken: ");
+        double hours_taken = scanner.nextDouble();
+
+        System.out.println("Please input how many minutes taken: ");
+        double minutes_taken = scanner.nextDouble();
+
+        System.out.println("Please input seconds: ");
+        double seconds_taken = scanner.nextDouble();
+
+        //1hr = 3600 seconds. 1min = 60 seconds
+        double seconds = (hours_taken * 3600) + (minutes_taken * 60) + seconds_taken;
+        double meters_per_second = meters / seconds;
+        System.out.println("Meters per second: " + meters_per_second);
+
+        double hours = (seconds_taken / 3600) + (minutes_taken / 60) + hours_taken;
+
+        double kilometrs = meters / 1000;
+        double miles = meters / 1609;
+        double km_per_hour = kilometrs / hours;
+        double miles_per_hour = miles / hours;
+        System.out.println("KM per hours: " + km_per_hour);
+        System.out.println("Miles per hours: " + miles_per_hour);
+
     }
 
 }
